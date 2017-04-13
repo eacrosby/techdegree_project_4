@@ -4,7 +4,72 @@
   <meta charset="utf-8">
   <title>Eric Crosby's Project #4</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Search Box -->
+    
+    <!-- Gallery -->
+    <div id="lightgallery">
+          <a href="photos/01.jpg">
+              <img src="photos/thumbnails/01.jpg" />
+          </a>
+          <a href="photos/02.jpg">
+              <img src="photos/thumbnails/02.jpg" />
+          </a>
+            <a href="photos/03.jpg">
+              <img src="photos/thumbnails/03.jpg" />
+          </a>
+        <a href="photos/04.jpg">
+              <img src="photos/thumbnails/04.jpg" />
+          </a>
+        <a href="photos/05.jpg">
+              <img src="photos/thumbnails/05.jpg" />
+          </a>
+        <a href="photos/06.jpg">
+              <img src="photos/thumbnails/06.jpg" />
+          </a>
+        <a href="photos/07.jpg">
+              <img src="photos/thumbnails/07.jpg" />
+          </a>
+        <a href="photos/08.jpg">
+              <img src="photos/thumbnails/08.jpg" />
+          </a>
+        <a href="photos/09.jpg">
+              <img src="photos/thumbnails/09.jpg" />
+          </a>
+        <a href="photos/10.jpg">
+              <img src="photos/thumbnails/10.jpg" />
+          </a>
+        <a href="photos/11.jpg">
+              <img src="photos/thumbnails/11.jpg" />
+          </a>
+        <a href="photos/12.jpg">
+              <img src="photos/thumbnails/12.jpg" />
+          </a>
+    </div>
+    <!-- jQuery version must be >= 1.8.0; -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <script src="js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+            download: false,
+            thumbMargin: 50,
+            share: false,
+        }); 
+    });
+</script>
+</body>  

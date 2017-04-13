@@ -1,0 +1,44 @@
+
+/* Style thumbnails */
+#lightgallery {
+    width: 80%;
+    margin: 100px auto;
+}
+
+#lightgallery img {
+    margin: 25px;
+}
+
+#lightgallery a {
+    text-decoration: none;
+}
+
+/* Adjust content of buttons in lightbox
+.lg-actions .lg-next:before {
+    content: "\21E2";
+}
+
+.lg-actions .lg-prev:before {
+    content: "\21E0";
+}
+
+.lg-actions .lg-prev:after {
+    content: none;
+}
+
+.lg-toolbar .lg-close:after {
+    content: "\2573";
+}
+
+.lg-fullscreen:after {
+    content: "\2197";
+}
+
+.lg-fullscreen-on .lg-fullscreen:after {
+    content: "\2199";
+}
+
+.lg-outer .lg-toogle-thumb:after {
+    content: "\2193";
+}
+*/
