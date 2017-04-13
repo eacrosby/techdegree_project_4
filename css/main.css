@@ -1,19 +1,20 @@
 
 /* Style thumbnails */
 #lightgallery {
-    width: 80%;
+    max-width: 320px;
     margin: 100px auto;
 }
 
 #lightgallery img {
-    margin: 25px;
+    margin: 25px auto 25px 18%;
 }
 
 #lightgallery a {
     text-decoration: none;
+    margin: 0 auto;
 }
 
-/* Adjust content of buttons in lightbox
+/* Adjust content of buttons in lightbox */
 .lg-actions .lg-next:before {
     content: "\21E2";
 }
@@ -41,4 +42,27 @@
 .lg-outer .lg-toogle-thumb:after {
     content: "\2193";
 }
-*/
+
+
+/* media queries */
+@media screen and (min-width: 768px) {
+    #lightgallery {
+        max-width: 760px;
+        margin: 100px auto;
+    }
+    
+    #lightgallery img {
+        margin: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #lightgallery {
+        max-width: 1015px;
+        margin: 100px auto;
+    }
+    
+    #lightgallery img {
+        margin: 25px;
+    }
+}
