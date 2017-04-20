@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Search box */
 
 #search {
@@ -11,7 +15,7 @@
 
 input {
     width: 320px;
-    border 1px solid #ddd;
+    border 2px solid #c9c9c9;
     margin-bottom: 12px;
     margin-top: 40px;
     border-radius: 6px;
@@ -42,8 +46,13 @@ li a {
 }
 
 a {
-    width: 250px;
     text-align: center;
+}
+
+.caption {
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
 }
 
 /* 
@@ -104,6 +113,12 @@ a {
     
     li {
         margin-bottom: 0;
+        width: 250px;
+        display: inline-block;
+    }
+    
+    a {
+        width: 250px;
     }
 }
 
