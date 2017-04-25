@@ -18,7 +18,7 @@
     </div>
     <!-- Gallery -->
     <div id="lightgallery">
-        <ul id="imgs lightgallery" class="sans">    
+        <ul id="imgs" class="sans">    
             <li><a href="img/01.jpg" data-fancybox="images" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
                   <img src="img/thumbnails/01.jpg" title="Hay Bales" alt="Hay Bales" /><span class="caption">Hay Bales</span>
                 </a></li>
@@ -99,12 +99,13 @@ function imgSearch() {
     var input, filter, ul, li, a, i;
     input = document.getElementById('searchBox');
     filter = input.value.toUpperCase();
+    console.log(filter);
     ul = document.getElementById("imgs");
     li = ul.getElementsByTagName('li');
     
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+        a = li[i].getElementsByClassName("caption")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
