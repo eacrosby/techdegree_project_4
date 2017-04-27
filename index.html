@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/search.js"></script>
 </head>
 <body>
     <div id="search">
@@ -20,40 +21,40 @@
     <div id="lightgallery">
         <ul id="imgs" class="sans">    
             <li><a href="img/01.jpg" data-fancybox="images" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
-                  <img src="img/thumbnails/01.jpg" title="Hay Bales" alt="Hay Bales" /><span class="caption">Hay Bales</span>
+                  <img src="img/thumbnails/01.jpg" title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." alt="Hay Bales" /><span class="caption">Hay Bales</span>
                 </a></li>
             <li><a href="img/02.jpg" data-fancybox="images" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
-                <img src="img/thumbnails/02.jpg" title="Lake" alt="Lake"/><span class="caption">Lake</span>
+                <img src="img/thumbnails/02.jpg" title="The lake was so calm today. We had a great view of the snow on the mountains from here." alt="Lake"/><span class="caption">Lake</span>
                 </a></li>
             <li><a href="img/03.jpg" data-fancybox="images" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
-                <img src="img/thumbnails/03.jpg" title="Canyon" alt="Canyon"/><span class="caption">Canyon</span>
+                <img src="img/thumbnails/03.jpg" title="I hiked to the top of the mountain and got this picture of the canyon and trees below." alt="Canyon"/><span class="caption">Canyon</span>
                 </a></li>
             <li><a href="img/04.jpg" data-fancybox="images" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
-                <img src="img/thumbnails/04.jpg" title="Iceberg" alt="Iceberg"/><span class="caption">Iceberg</span>
+                <img src="img/thumbnails/04.jpg" title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." alt="Iceberg"/><span class="caption">Iceberg</span>
                 </a></li>
             <li><a href="img/05.jpg" data-fancybox="images" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
-                <img src="img/thumbnails/05.jpg" title="Desert" alt="Desert"/><span class="caption">Desert</span>
+                <img src="img/thumbnails/05.jpg" title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." alt="Desert"/><span class="caption">Desert</span>
                 </a></li>
             <li><a href="img/06.jpg" data-fancybox="images" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
-                <img src="img/thumbnails/06.jpg" title="Fall" alt="Fall"/><span class="caption">Fall</span>
+                <img src="img/thumbnails/06.jpg" title="Fall is coming, I love when the leaves on the trees start to change color." alt="Fall"/><span class="caption">Fall</span>
 </a></li>
             <li><a href="img/07.jpg" data-fancybox="images" data-caption="I drove past this plantation yesterday, everything is so green!">
-                <img src="img/thumbnails/07.jpg" title="Plantation" alt="Plantation"/><span class="caption">Plantation</span>
+                <img src="img/thumbnails/07.jpg" title="I drove past this plantation yesterday, everything is so green!" alt="Plantation"/><span class="caption">Plantation</span>
 </a></li>
             <li><a href="img/08.jpg" data-fancybox="images" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
-                <img src="img/thumbnails/08.jpg" title="Dunes" alt="Dunes"/><span class="caption">Dunes</span>
+                <img src="img/thumbnails/08.jpg" title="My summer vacation to the Oregon Coast. I love the sandy dunes!" alt="Dunes"/><span class="caption">Dunes</span>
 </a></li>
             <li><a href="img/09.jpg" data-fancybox="images" data-caption="We enjoyed a quiet stroll down this countryside lane.">
-                <img src="img/thumbnails/09.jpg" title="Countryside Lane" alt="Countryside Lane"/><span class="caption">Countryside Lane</span>
+                <img src="img/thumbnails/09.jpg" title="We enjoyed a quiet stroll down this countryside lane." alt="Countryside Lane"/><span class="caption">Countryside Lane</span>
 </a></li>
             <li><a href="img/10.jpg" data-fancybox="images" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
-                <img src="img/thumbnails/10.jpg" title="Sunset" alt="Sunset"/><span class="caption">Sunset</span>
+                <img src="img/thumbnails/10.jpg" title="Sunset at the coast! The sky turned a lovely shade of orange." alt="Sunset"/><span class="caption">Sunset</span>
               </a></li>
             <li><a href="img/11.jpg" data-fancybox="images" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">
-                <img src="img/thumbnails/11.jpg" title="Cave" alt="Cave"/><span class="caption">Cave</span>
+                <img src="img/thumbnails/11.jpg" title="I did a tour of a cave today and the view of the landscape below was breathtaking." alt="Cave"/><span class="caption">Cave</span>
 </a></li>
             <li><a href="img/12.jpg" data-fancybox="images" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
-                <img src="img/thumbnails/12.jpg" title="Bluebells" alt="Bluebells"/><span class="caption">Bluebells</span>
+                <img src="img/thumbnails/12.jpg" title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." alt="Bluebells"/><span class="caption">Bluebells</span>
 </a></li>
         </ul>
     </div>
@@ -65,54 +66,36 @@
     <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
-    <script src="js/lightgallery.min.js"></script>
-
-    <!-- lightgallery plugins -->
-    <!--
-    <script src="js/lg-thumbnail.min.js"></script>
-    <script src="js/lg-fullscreen.min.js"></script>
-    <script src="js/search.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('#lightgallery').lightGallery({
-            download: false,
-            thumbMargin: 50,
-            share: false,
-        }); 
-    });
-</script>
--->
-
     <!--  fancyBox   -->
     <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript">
 	$("[data-fancybox]").fancybox({
 		// Options will go here
 	});
-</script>
+    </script>
     
-    <!-- Search Function -->
+ <!--    Search Function    -->
     <script>
-function imgSearch() {
-    // Declare variables
-    var input, filter, ul, li, a, i;
-    input = document.getElementById('searchBox');
-    filter = input.value.toUpperCase();
-    console.log(filter);
-    ul = document.getElementById("imgs");
-    li = ul.getElementsByTagName('li');
-    
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByClassName("caption")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
+        function imgSearch() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('searchBox');
+            filter = input.value.toLowerCase();
+            console.log(filter);
+            ul = document.getElementById("imgs");
+            li = ul.getElementsByTagName('li');
 
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
         }
-    }
-}
-</script>
+    </script>
 </body>  
+</html>
